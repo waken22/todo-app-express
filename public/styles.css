@@ -1,0 +1,16 @@
+.ul-items {
+  padding-top: 2em;
+  padding-left: 0em;
+}
+
+.li-item {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.li-text {
+  color: white;
+  display: center;
+}

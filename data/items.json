@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "task": "Hello World!",
+    "completed": false,
+    "date": "30/10/2017"
+  },
+  {
+    "id": 2,
+    "task": "Do a sandwich!",
+    "completed": false,
+    "date": "30/10/2017"
+  }
+]
