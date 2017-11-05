@@ -1,9 +1,10 @@
 let items = require('../data/items.json')
 const uuid = require('uuid/v1')
 
-function getItemsTodo() {
+function getItems() {
   return items
 }
+
 
 function addNewItem(item) {
   const newTask = {
@@ -21,4 +22,4 @@ function delItemTodo(item) {
   })
 }
 
-module.exports = { getItemsTodo, addNewItem, delItemTodo }
+module.exports = { getItems, addNewItem, delItemTodo }

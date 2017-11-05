@@ -21,7 +21,7 @@ $('.del-task').on('click', function(e) {
   const method = 'DELETE'
 
   $.ajax({ url, method })
-    .then( (result) =>  {
+    .then( result =>  {
       console.log(result)
       $liContainer.remove()
   })

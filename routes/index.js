@@ -3,7 +3,7 @@ const express = require('express')
 const showList = require('./handlers/showList')
 const showListCompleted = require('./handlers/showListCompleted')
 const addNewItem = require('./handlers/addNewItemTodo')
-const delItem = require('./handlers/delItemTodo')
+const delItemTodo = require('./handlers/delItemTodo')
 
 const router = express.Router();
 
@@ -14,7 +14,7 @@ router.route('/new')
   .post(addNewItem)
 
 router.route('/delete/:id')
-  .delete(delItem)
+  .delete(delItemTodo)
 
 
 router.get('/completed', showListCompleted)

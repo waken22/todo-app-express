@@ -3,3 +3,12 @@ extends layout/index
 block content
   h2=title
   p=text
+  .container
+    .row
+      .col-md-offset-2.col-md-8
+        ul.ul-itemsCompleted
+          each item in items
+            if item.completed
+              li.li-itemCompleted
+                p.li-text #{ item.task }
+                button.btn.btn-sm.btn-danger.del-taskCompleted(data=`${ item.id }`) Delete
